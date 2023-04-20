@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // js 中的错误类型  过关
+  // ## syntaxError 语法错误
+  // 比如 let arr = [1,2
+  // ## TypeError 类型错误
+  // 比如
+  // let a = 1;
+  // a()
+  // ## ReferenceError 引用错误
+  // consol.log(c)
+  // ## RangeError 范围错误
+  // let arr = new Array(9999999999999999999)
+  // ## URIError: url 错误
+  // 比如 decodeUrl 中 解析不正常的字符 如
+  // decodeUrl("%%")
+  //   function test() {
+  //     names = "jimmy"; // 全局变量
+  //   }
+  //   test();
+  //   console.log(names); // "jimmy"
+
+  //   let const var 区别
+  // var 会给全局添加属性
+  // 块级作用域
+  // 变量提升
+  // 不可重复声明
+  // 暂时性死区
+  // const 声明的值 不能改变，必须有初始值等
+  //   function foo() {
+  //     for (let i = 0; i < 5; i++) {
+  //       // Todo
+  //     }
+  //     console.log("i", i); // 5
+  //   }
+  //   foo();
+  // Symbol BigInt用法
+  //  number string boolean undefined null Symbol BigInt object
+
+  //   let arr = [1, 2, 3, 4, 3];
+  //   let obj = {};
+
+  //   let arr1 = arr.reduce((prev, next) => {
+  //     if (prev?.includes(next)) {
+  //       return prev?.filter((item) => {
+  //         return item !== next;
+  //       });
+  //     }
+  //     prev?.push(next);
+  //     return prev;
+  //     // prev?.includes(next)
+  //     //   ? (prev = prev?.filter((item) => {
+  //     //       return item !== next;
+  //     //     }))
+  //     //   : prev?.push(next);
+  //     // return prev;
+  //   }, []);
+  //   console.log("arr1", arr1);
+
+  //   console.log(a);
+  //   let a = 1;
+
+  //   console.log("Object.__proto__ === Function.prototype;", Object.__proto__ === Function.prototype); // 打印true
+  //   console.log("Object.__proto__ === Function.prototype;", Function.prototype.__proto__ === Object.prototype); // 打印true
+  //   Object 是被 Function 构造函数构造的
+  //   Function 的原型的构造函数又是 Object
+  //   那function 和 object 不是鸡生蛋 蛋生鸡嘛
+  //   let arr = [1, 2, 3, 4];
+  //   let arr = [{ x: 1 }, { x: 2 }, { x: 3 }];
+  //   let sum = arr.reduce((prev, current) => {
+  //     return prev + current.x;
+  //   }, 0);
+  //   console.log("sum", sum);
+  //   let names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
+  //   let arr = [1, 2, 3];
+  //   //   console.log("", arr.slice(0, -1));
+  //   console.log("", arr.splice(0, 1));
+  //   console.log("arr", arr);
+</script>
