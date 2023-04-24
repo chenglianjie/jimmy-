@@ -6,30 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <p id="help">Helpful notes will appear here</p>
+    <p>E-mail: <input type="text" id="email" name="email" /></p>
+    <p>Name: <input type="text" id="name" name="name" /></p>
+    <p>Age: <input type="text" id="age" name="age" /></p>
+  </body>
 </html>
 <script>
-  //   const uri = "%%";
-  //   const encoded = decodeURI(uri);
-  let arr = new Array(9999999999999999999);
-  //   console.log(encoded);
-  //   try {
-  //     console.log(decodeURI(encoded));
-  //   } catch (e) {
-  //     console.error(e);
-  //   }
+  var name = "The Window";
 
-  var a = 10;
+  var object = {
+    name: "My Object",
 
-  function functionA() {
-    console.log("Start function A");
-    function functionB() {
-      console.log("In function B");
-    }
+    getNameFunc: function () {
+      return () => {
+        return this.name;
+      };
+    },
+  };
 
-    functionB();
-  }
+  alert(object.getNameFunc()());
 
-  functionA();
-  console.log("GlobalContext");
+  setTimeout(() => {}, 100);
 </script>
